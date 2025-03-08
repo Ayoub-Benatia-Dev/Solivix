@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإشعارات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/shared.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="notifications-header">
+            <div class="search-bar">
+                <input type="search" placeholder="ابحث في الإشعارات..." aria-label="بحث">
+                <i class="material-icons search-icon">search</i>
+            </div>
+        </div>
+    </header>
+
+    <main class="notifications-container">
+        <a href="../tutorials/articles/react-cors-fix.html" class="notification-item">
+            <div class="notification-icon success">
+                <i class="material-icons">verified</i>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">تم تفعيل حسابك بنجاح</h3>
+                <p class="notification-text">مرحباً بك في منصتنا! يمكنك الآن الاستفادة من جميع المميزات.</p>
+                <span class="notification-time">2024/01/15</span>
+            </div>
+        </a>
+
+        <a href="../web-gallery/" class="notification-item">
+            <div class="notification-icon info">
+                <i class="material-icons">library_books</i>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">محتوى جديد</h3>
+                <p class="notification-text">تم إضافة شرح جديد عن كيفية حل مشكلة CORS في React.js</p>
+                <span class="notification-time">2024/01/14</span>
+            </div>
+        </a>
+
+        <a href="../web-gallery/templates/" class="notification-item">
+            <div class="notification-icon download">
+                <i class="material-icons">file_download</i>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">قالب جديد متاح</h3>
+                <p class="notification-text">تم إضافة قالب متجر إلكتروني جديد إلى المعرض</p>
+                <span class="notification-time">2024/01/14</span>
+            </div>
+        </a>
+
+        <a href="../security/update-password.html" class="notification-item">
+            <div class="notification-icon warning">
+                <i class="material-icons">warning</i>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">تحديث أمني مهم</h3>
+                <p class="notification-text">يرجى تحديث كلمة المرور الخاصة بك لتعزيز أمان حسابك</p>
+                <span class="notification-time">2024/01/13</span>
+            </div>
+        </a>
+
+        <a href="../system/update.html" class="notification-item">
+            <div class="notification-icon update">
+                <i class="material-icons">system_update</i>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">تحديث النظام</h3>
+                <p class="notification-text">تم إطلاق تحديث جديد يتضمن تحسينات في الأداء وإصلاحات للأخطاء</p>
+                <span class="notification-time">2024/01/12</span>
+            </div>
+        </a>
+    </main>
+
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="../"><i class="material-icons">explore</i></a></li>
+            <li><a href="../web-gallery/"><i class="material-icons">extension</i></a></li>
+            <li><a href="../tutorials/"><i class="material-icons">science</i></a></li>
+            <li><a href="./" class="active"><i class="material-icons">notifications</i></a></li>
+        </ul>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>

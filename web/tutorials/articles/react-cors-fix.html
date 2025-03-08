@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حل مشكلة CORS في React.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/shared.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <a href="../" class="back-btn">
+        <i class="material-icons">arrow_back</i>
+    </a>
+
+    <article class="article-wrapper">
+        <!-- قسم العنوان -->
+        <div class="article-header">
+            <h1>حل مشكلة CORS في React.js</h1>
+            <div class="article-intro">
+                <p>تعتبر مشكلة CORS من المشاكل الشائعة التي تواجه مطوري React.js عند التعامل مع واجهات API. في هذا الشرح سنتعرف على أسباب المشكلة وكيفية حلها بطرق مختلفة.</p>
+            </div>
+        </div>
+
+        <!-- قسم المحتوى الرئيسي -->
+        <div class="article-content">
+            <!-- الفقرات -->
+            <div class="content-section">
+                <h2>ما هي مشكلة CORS؟</h2>
+                <p class="paragraph">
+                    CORS هي آلية أمان تفرضها المتصفحات لمنع الطلبات من مصادر مختلفة. تحدث المشكلة عندما يحاول تطبيق React الوصول إلى API من نطاق مختلف.
+                </p>
+            </div>
+
+            <!-- الأكواد -->
+            <div class="code-section">
+                <div class="code-header">
+                    <span>مثال على المشكلة</span>
+                    <button class="copy-btn">
+                        <i class="material-icons">content_copy</i>
+                    </button>
+                </div>
+                <pre><code>// الكود المسبب للمشكلة
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .catch(error => console.error('CORS Error:', error));</code></pre>
+            </div>
+
+            <!-- الحلول مع الشرح -->
+            <div class="content-section solutions">
+                <h2>طرق الحل</h2>
+                <div class="solution-card">
+                    <h3>1. إعداد Proxy في React</h3>
+                    <pre><code>// في package.json
+{
+  "proxy": "http://localhost:5000"
+}</code></pre>
+                </div>
+                
+                <div class="solution-card">
+                    <h3>2. إعداد الخادم</h3>
+                    <pre><code>// في Express.js
+app.use(cors());</code></pre>
+                </div>
+            </div>
+
+            <!-- الفيديو التوضيحي -->
+            <div class="video-section">
+                <h2>شرح فيديو</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- الروابط المفيدة -->
+            <div class="links-section">
+                <h2>روابط مفيدة</h2>
+                <div class="links-grid">
+                    <a href="#" class="link-card">
+                        <i class="material-icons">article</i>
+                        <span>توثيق React الرسمي</span>
+                    </a>
+                    <a href="#" class="link-card">
+                        <i class="material-icons">code</i>
+                        <span>أمثلة برمجية</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

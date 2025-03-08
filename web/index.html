@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقي الجديد</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/minecraft-4">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <input type="search" placeholder="ابحث هنا..." aria-label="بحث">
+            <i class="material-icons search-icon">search</i>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="posts" class="post-grid">
+                <a href="#post-link" class="post-card">
+                    <div class="post-header">
+                        <i class="material-icons post-icon">article</i>
+                        <h2 class="post-title">عنوان المنشور</h2>
+                    </div>
+                    
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="assets/images/blog-1.jpg" alt="صورة المقال">
+                        </div>
+                        
+                        <p class="post-excerpt">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي...
+                        </p>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-info">
+                            <i class="material-icons">calendar_today</i>
+                            <span>2024/01/15</span>
+                        </div>
+                        <div class="post-stats">
+                            <span><i class="material-icons">code</i> HTML</span>
+                            <span><i class="material-icons">assignment</i> مقال</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#post-link" class="post-card">
+                    <div class="post-header">
+                        <i class="material-icons post-icon">code</i>
+                        <h2 class="post-title">تطوير واجهات المستخدم</h2>
+                    </div>
+                    
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/800/400?random=1" alt="واجهات المستخدم">
+                        </div>
+                        
+                        <p class="post-excerpt">
+                            أساسيات تطوير واجهات المستخدم الحديثة باستخدام HTML و CSS مع أمثلة عملية...
+                        </p>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-info">
+                            <i class="material-icons">calendar_today</i>
+                            <span>2024/01/15</span>
+                        </div>
+                        <div class="post-stats">
+                            <span><i class="material-icons">code</i> تطوير</span>
+                            <span><i class="material-icons">article</i> مقال</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#design-link" class="post-card">
+                    <div class="post-header">
+                        <i class="material-icons post-icon">brush</i>
+                        <h2 class="post-title">تصميم تجربة المستخدم</h2>
+                    </div>
+                    
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/800/400?random=2" alt="تصميم UX">
+                        </div>
+                        
+                        <p class="post-excerpt">
+                            مبادئ تصميم تجربة المستخدم وكيفية تطبيقها في مشاريعك الحقيقية...
+                        </p>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-info">
+                            <i class="material-icons">calendar_today</i>
+                            <span>2024/01/14</span>
+                        </div>
+                        <div class="post-stats">
+                            <span><i class="material-icons">palette</i> تصميم</span>
+                            <span><i class="material-icons">school</i> درس</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#api-link" class="post-card">
+                    <div class="post-header">
+                        <i class="material-icons post-icon">api</i>
+                        <h2 class="post-title">العمل مع REST APIs</h2>
+                    </div>
+                    
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/800/400?random=3" alt="REST APIs">
+                        </div>
+                        
+                        <p class="post-excerpt">
+                            دليلك الشامل للتعامل مع واجهات برمجة التطبيقات REST وتكاملها مع تطبيقات الويب...
+                        </p>
+                    </div>
+
+                    <div class="post-meta">
+                        <div class="post-info">
+                            <i class="material-icons">calendar_today</i>
+                            <span>2024/01/13</span>
+                        </div>
+                        <div class="post-stats">
+                            <span><i class="material-icons">dns</i> API</span>
+                            <span><i class="material-icons">book</i> دليل</span>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="/" class="active"><i class="material-icons">explore</i></a></li>
+                <li><a href="web-gallery/"><i class="material-icons">extension</i></a></li>
+                <li><a href="tutorials/"><i class="material-icons">science</i></a></li>
+                <li><a href="notifications/"><i class="material-icons">notifications</i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

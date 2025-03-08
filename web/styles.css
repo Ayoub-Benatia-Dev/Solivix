@@ -62,6 +62,7 @@ main {
     min-height: 70vh;
 }
 
+/* إعادة تنسيق شريط البحث */
 .search-bar {
     margin: 0.5rem auto;
     position: relative;
@@ -363,6 +364,11 @@ main {
 /* التحكم في الأحجام حسب حجم الشاشة */
 @media (min-width: 1024px) {
     .search-bar {
+        position: static;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 0.5rem auto;
         max-width: 500px;
     }
 
@@ -377,5 +383,23 @@ main {
 
     .footer-nav i.material-icons {
         font-size: 24px;
+    }
+
+    .search-bar {
+        position: static;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+
+    main {
+        padding-right: 80px; /* مسافة للقائمة الجانبية */
     }
 }

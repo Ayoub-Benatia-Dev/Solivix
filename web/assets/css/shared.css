@@ -53,6 +53,12 @@ body {
     padding: 8px;
 }
 
-.footer-nav i.material-icons {
-    font-size: 28px;
+/* إزالة التنسيقات الإضافية للبيسي */
+@media (min-width: 1024px) {
+    /* إزالة جميع التنسيقات الخاصة بالبيسي */
+}
+
+/* Mobile Styles - لا تغيير في تنسيق الجوال */
+@media (max-width: 1023px) {
+    /* الإبقاء على التنسيقات الحالية للجوال */
 }

@@ -1,0 +1,18 @@
+/* إعادة للتنسيق الأصلي للشريط السفلي */
+.footer-nav {
+    background: var(--header-gradient);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.8rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
